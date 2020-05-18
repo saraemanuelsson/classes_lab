@@ -28,4 +28,8 @@ class CodeClanStudent
         return quote
     end
 
+    def declare_favourite_language(language)
+        return "I love #{language}"
+    end
+
 end
