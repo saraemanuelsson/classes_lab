@@ -13,4 +13,9 @@ class SportsTeam
         @players << new_player
     end
 
+    def player_is_on_team(player)
+        @players.include?(player)
+    end
+
+
 end

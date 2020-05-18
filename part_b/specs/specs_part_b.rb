@@ -42,4 +42,14 @@ class TestSportsTeam < MiniTest::Test
         assert_equal(5, team.players().length)
     end
 
+    def test_player_is_on_team
+        team = SportsTeam.new(@team_name, @players, @coach)
+        assert_equal(true, team.player_is_on_team("Rolf-Goran Bengtsson"))
+    end
+
+    def test_player_is_not_on_team
+        team = SportsTeam.new(@team_name, @players, @coach)
+        assert_equal(false, team.player_is_on_team("Sara Emanuelsson"))
+    end
+
 end
