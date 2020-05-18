@@ -36,4 +36,10 @@ class TestSportsTeam < MiniTest::Test
         assert_equal("Henrik von Eckermann", team.coach())
     end
 
+    def test_add_player
+        team = SportsTeam.new(@team_name, @players, @coach)
+        team.add_player("Helena Lundback")
+        assert_equal(5, team.players().length)
+    end
+
 end
