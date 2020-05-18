@@ -25,6 +25,13 @@ class TestSportsTeam < MiniTest::Test
         assert_equal(4, team.players().length)
     end
 
+    def test_coach 
+        team = SportsTeam.new(@team_name, @players, @coach)
+        assert_equal("Henrik Ankarcrona", team.coach())
+    end
 
+    # def test_change_coach
+    #     team = SportsTeam.new(@team_name, @players, @coach)
+    #     assert_equal("Henrik von Eckermann", team.
 
 end
