@@ -18,13 +18,13 @@ class TestCodeClanStudent < MiniTest::Test
 
     def test_can_change_name
         student = CodeClanStudent.new("Sara", "E40")
-        student.change_name("Klaus")
+        student.name = "Klaus"
         assert_equal("Klaus", student.name())
     end
 
     def test_can_change_cohort
         student = CodeClanStudent.new("Sara", "E40")
-        student.change_cohort("E39")
+        student.cohort = "E39"
         assert_equal("E39", student.cohort())
     end
 
