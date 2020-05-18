@@ -24,4 +24,8 @@ class CodeClanStudent
         return @cohort = new_cohort
     end
 
+    def student_talks(quote)
+        return quote
+    end
+
 end
