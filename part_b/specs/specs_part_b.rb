@@ -32,7 +32,7 @@ class TestSportsTeam < MiniTest::Test
 
     def test_change_coach
         team = SportsTeam.new(@team_name, @players, @coach)
-        team.change_coach("Henrik von Eckermann")
+        team.coach = "Henrik von Eckermann"
         assert_equal("Henrik von Eckermann", team.coach())
     end
 
