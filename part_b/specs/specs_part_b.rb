@@ -21,7 +21,6 @@ class TestSportsTeam < MiniTest::Test
     end
 
     def test_players
-        assert_equal(["Malin Bayard", "Rolf-Goran Bengtsson", "Peder Fredricson", "Helena Jonsson"], @team.players())
         assert_equal(4, @team.players().length)
     end
 
